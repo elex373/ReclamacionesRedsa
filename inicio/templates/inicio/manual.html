@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redsa</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'polls/css/style1.css' %}">
+    <link rel="short icon" href="./images/redsaicon.png" type="image/x-icon">
+    <script src="{% static 'polls/js/jquery.js'%}" defer></script>
+    <script src="{% static 'polls/js/index.js' %}" defer></script>
+
+    <style>
+    </style>
+</head>
+<body>
+    <div id="agrupar">
+
+        <header id="cabecera">
+            <h1>Workspace</h1>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li><a href="{% url 'inicio:inicio'%}" class="nav-link" data-target="inicio">Inicio</a></li>
+                <li><a href="{% url 'inicio:manual'%}" class="nav-link active" data-target="manualDeUsuario">Manual de Usuario</a></li>
+                <li><a href="{% url 'users:login'%}" class="nav-link" data-target="login">Log-in</a></li>
+                <li><a href="{% url 'users:register'%}" class="nav-link" id="log-link" data-target="login">Register</a></li>
+            </ul>
+        </nav>
+
+        <section id="seccion">
+    
+            <div class="content" id="manualDeUsuario">
+                <h1>Manual de Usuario</h1>
+                <p>Bienvenido a Manual de Usuario</p>
+            </div>    
+
+        <aside id="columna">
+            <blockquote>Referencia 1 a section</blockquote>
+            <blockquote>Referencia 2 a section</blockquote>
+        </aside>
+
+        <footer id="pie">
+            <address>
+                <a href="https://www.youtube.com/watch?v=Y-OhzQpsRwI">Youtube watch?</a>
+            </address>
+        </footer>
+    </div>
+
+</body>
+</html>

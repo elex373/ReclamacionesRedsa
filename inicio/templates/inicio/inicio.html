@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redsa</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'inicio/css/style1.css' %}">
+    <script src="{% static 'inicio/js/jquery.js'%}" defer></script>
+    <script src="{% static 'inicio/js/index.js' %}" defer></script>
+
+    <style>
+    </style>
+</head>
+<body>
+    <div id="agrupar">
+
+        <header id="cabecera">
+            <h1>Workspace</h1>
+        </header>
+        <nav id="menu">
+            <ul><li><a href="{% url 'inicio:inicio'%}" class="nav-link active" id="inicio-link" data-target="inicio">Inicio</a></li>
+                <li><a href="{% url 'inicio:manual' %}" class="nav-link" id="manual-link" data-target="manualDeUsuario">Manual de Usuario</a></li>
+                <li><a href="{% url 'users:login'%}" class="nav-link" id="log-link" data-target="login">Log-in</a></li>
+                <li><a href="{% url 'users:register'%}" class="nav-link" id="log-link" data-target="login">Register</a></li>
+            </ul>
+        </nav>
+
+        <section id="seccion">
+
+            <div class="content" id="inicio">
+                <h1>Inicio</h1>
+                <p>Bienvenido a inicio</p>
+            </div>
+        
+
+        <aside id="columna">
+            <blockquote>Referencia 1 a section</blockquote>
+            <blockquote>Referencia 2 a section</blockquote>
+        </aside>
+
+        <footer id="pie">
+            <address>
+                <a href="https://www.youtube.com/watch?v=Y-OhzQpsRwI">Youtube watch?</a>
+            </address>
+        </footer>
+    </div>
+
+</body>
+</html>
